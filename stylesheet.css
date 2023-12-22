@@ -122,15 +122,10 @@ header {
 }
 .About-right img {
   width: 100%;
+  max-width: 200px;
   height: auto;
   display: block;
   margin: 0 auto;
-}
-.About-right img {
-  width: 100%;
-  max-width: 200px;
-  height: auto;
-
 }
 
 
