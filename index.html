@@ -1,167 +1,137 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>PortFolio</title>
-    <link rel="stylesheet" href="stylesheet.css">
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap" rel="stylesheet">
-    <style>
-      .josefin-sans {
-        font-family: 'Josefin Sans', sans-serif;
-      }
-    </style>
-  </head>
-
-  <body>
-    <!--Header-->
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MochaNeo's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+</head>
+<body>
     <header>
-      <div class="container">
-        <div class="header-left">
-          <a class="header-title josefin-sans" href=#top>PortFolio</a>
-        </div>
-        <div class="header-right">
-          <a class="josefin-sans" href=#top>Top</a>
-          <a class="josefin-sans" href=#About>About</a>
-          <a class="josefin-sans" href=#Skill>Skill</a>
-          <a class="josefin-sans" href=#Example>Example</a>
-          <a class="josefin-sans" href=#Contact>Contact</a>
-        </div>
-      </div>
+        <nav class="container">
+            <a href="#top" class="logo">PortFolio</a>
+            <button id="menu-toggle" aria-label="メニューを開く">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul id="nav-menu">
+                <li><a href="#top">Top</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skill">Skill</a></li>
+                <li><a href="#example">Example</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-
-    <!--Top-->
-    <div class="top-wrapper" id="top">
-      <div class="image src1"></div>
-      <div class="image src2"></div>
-      <div class="image src3"></div>
-      <div class="image src4"></div>
-      <div class="image src5"></div>
-      <div class="container">
-        <h1>MochaNeo's</h1>
-        <h1>PortFolio</h1>
-      </div>
-    </div>
-
-
-    <!-- About -->
-    <div class="About-wrapper" id="About">
-      <div class="container">
-        <div class="heading">
-          <h2>About</h2>
-        </div>
-        <div class="text About-text">
-          <div class="About-left">
-            <p>はじめまして、MochaNeoと申します。</p>
-            <p>都内でSEとして働いており、以前は看護師として働いていました。</p>
-            <p>社会人3年目になり、現在はSES企業に入社し、Javaを中心に様々な技術を学んでいます。</p>
-            <p>趣味はPCの自作や改造で、ガジェットやPCパーツに関する知識を深めることが大好きです。</p>
-            <p>技術とクリエイティビティの両面で成長していければと考えています。</p>
-          </div>
-          <div class="About-right">
-            <img src="imgs/neopolitan.png">
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-    <!--Skill-->
-    <div class="Skill-wrapper" id="Skill">
-      <div class="container">
-        <div class="heading">
-          <h2>Skill</h2>
-          <p>使用技術や資格等</p>
-        </div>
-
-        <div class="text">
-          <ul>
-            <li>開発言語：Java</li>
-            <li>フレームワーク：SpringBoot</li>
-            <li>DB：MySQL,PostgreSQL,H2</li>
-            <li>プロジェクト管理：Git(GitHub)</li>
-            <li>チャットツール：ChatWork</li>
-            <li>開発環境：Windows/linux</li>
-          </ul>
-          <p>保有資格：OCJP-Silver(SE11), OCJP-Gold(SE11)</p>
-          <p></p>
-        </div>
-
-      </div>
-    </div>
-
-    <!--Example-->
-    <div class="Example-wrapper" id="Example">
-      <div class="container">
-        <div class="heading">
-          <h2>Example</h2>
-          <p>サンプルのページを掲載していきます。</p>
-        </div>
-        <div class="text Example-text">
-
-          <div class="split-contents">
-            <p class="contents-title">PortFolio</p>
-            <div class="contents-text">
-              <p>HTML/CSSを利用して制作しました。</p>
-              <br>
-              <br>
-              <br>
+    <main>
+        <section id="top" class="hero">
+            <div class="container">
+                <h1>MochaNeo's Portfolio</h1>
             </div>
-            <div class="sumnail">
-              <a href="https://mochaneo.github.io/"target="_blank"><img src="imgs/portfolio_sumnail.png"></a>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <h2>About</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>はじめまして、MochaNeoと申します。</p>
+                        <p>都内でSEとして働いており、以前は看護師として働いていました。</p>
+                        <p>社会人3年目になり、現在はSES企業に入社し、Javaを中心に様々な技術を学んでいます。</p>
+                        <p>趣味はPCの自作や改造で、ガジェットやPCパーツに関する知識を深めることが大好きです。</p>
+                        <p>技術とクリエイティビティの両面で成長していければと考えています。</p>
+                    </div>
+                    <div class="about-image">
+                        <img src="imgs/neopolitan.png" alt="MochaNeo" width="200" height="200">
+                    </div>
+                </div>
             </div>
-            <a href="https://github.com/MochaNeo/MochaNeo.github.io"target="_blank"><img src="imgs/github_icon.png" class="link"></a>
-          </div>
+        </section>
 
-          <div class="split-contents">
-            <p class="contents-title">AccountBook</p>
-            <div class="contents-text">
-              <p>家計簿アプリです</p>
-              <p>基本的なCRUD機能を実装しています</p>
-              <p>※サーバーの起動まで5分程度かかります</p>
+        <section id="skill" class="skill">
+            <div class="container">
+                <h2>Skill</h2>
+                <p>使用技術や資格等</p>
+                <div class="skill-content">
+                    <div class="skill-card">
+                        <h3>開発スキル</h3>
+                        <ul>
+                            <li>開発言語：Java</li>
+                            <li>フレームワーク：SpringBoot</li>
+                            <li>DB：MySQL, PostgreSQL</li>
+                            <li>プロジェクト管理：Git(GitHub)</li>
+                            <li>開発環境：Windows</li>
+                        </ul>
+                    </div>
+                    <div class="skill-card">
+                        <h3>資格</h3>
+                        <ul>
+                            <li>OCJP-Silver(SE11)</li>
+                            <li>OCJP-Gold(SE11)</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div class="sumnail">
-              <a href="https://accountbooksampleapp.onrender.com/"target="_blank"><img src="imgs/AccountBook-sample.png"></a>
+        </section>
+
+        <section id="example" class="example">
+            <div class="container">
+                <h2>Example</h2>
+                <p>サンプルのページを掲載していきます。</p>
+                <div class="project-grid">
+                    <div class="project-card">
+                        <img src="imgs/portfolio_sumnail.png" alt="PortFolio" width="300" height="200">
+                        <h3>PortFolio</h3>
+                        <p>HTML/CSS/JSを利用して制作しました。</p>
+                        <div class="project-links">
+                            <a href="https://mochaneo.github.io/" target="_blank" rel="noopener noreferrer" class="btn">デモ</a>
+                            <a href="https://github.com/MochaNeo/MochaNeo.github.io" target="_blank" rel="noopener noreferrer" class="btn">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <img src="imgs/AccountBook-sample.png" alt="AccountBook" width="300" height="200">
+                        <h3>AccountBook</h3>
+                        <p>家計簿アプリです。基本的なCRUD機能を実装しています。</p>
+                        <div class="project-links">
+                            <a href="https://accountbooksampleapp.onrender.com/" target="_blank" rel="noopener noreferrer" class="btn">デモ</a>
+                            <a href="https://github.com/MochaNeo/AccountBook" target="_blank" rel="noopener noreferrer" class="btn">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <img src="imgs/update_wait.png" alt="更新予定" width="300" height="200">
+                        <h3>更新予定</h3>
+                        <p>新しいプロジェクトが追加される予定です。</p>
+                    </div>
+                </div>
             </div>
-            <a href="https://github.com/MochaNeo/AccountBook"target="_blank"><img src="imgs/github_icon.png" class="link"></a>
-          </div>
+        </section>
 
-          <div class="split-contents">
-            <p class="contents-title"><!--titlehere-->更新予定</p>
-            <div class="contents-text">
-              <!--texthere-->
-              <br><br><br>
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Contact</h2>
+                <div class="contact-links">
+                    <a href="https://github.com/MochaNeo" target="_blank" rel="noopener noreferrer" class="btn">
+                        <img src="imgs/github_icon.png" alt="GitHub" class="github-icon"> GitHub
+                    </a>
+                </div>
             </div>
-            <div class="sumnail">
-              <!--sumnail here-->
-              <a><img src="imgs/update_wait.png"></a>
-            </div>
-            <!--link here-->
-            <a><img class="link"></a>
-          </div>
+        </section>
+    </main>
 
-        </div>
-      </div>
-    </div>
-
-    <!--Contact-->
-    <div class="Contact-wrapper" id="Contact">
-      <div class="container">
-        <div class="heading">
-          <h2>Contact</h2>
-        </div>
-        <div class="linkfield">
-          <a href="https://github.com/MochaNeo"target="_blank"><img src="imgs/github_icon.png" class="link"></a>
-        </div>
-      </div>
-    </div>
-
-
-    <!--Footer-->
     <footer>
-      <div class="container">
-        <p>©2023 MochaNeo</p>
-      </div>
+        <div class="container">
+            <p>&copy; 2023 MochaNeo. All rights reserved.</p>
+        </div>
     </footer>
-  </body>
+
+    <script src="script.js"></script>
+</body>
 </html>
